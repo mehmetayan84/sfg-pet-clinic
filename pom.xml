@@ -43,12 +43,10 @@
             </plugin>
         </plugins>
     </build>
-
     <scm>
         <developerConnection>
             scm:git:git@github.com:mehmetayan84/sfg-pet-clinic.git
         </developerConnection>
       <tag>HEAD</tag>
   </scm>
-
 </project>

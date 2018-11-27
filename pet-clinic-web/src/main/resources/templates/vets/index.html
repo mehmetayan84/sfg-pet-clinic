@@ -12,6 +12,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Lastname</th>
+            <th>Specialization</th>
         </tr>
         </thead>
         <tbody>
@@ -19,6 +20,8 @@
             <td th:text="${vet.id}"></td>
             <td th:text="${vet.firstName}"></td>
             <td th:text="${vet.lastName}"></td>
+            <td><span th:each="speciality : ${vet.specialities}" th:text="${speciality.description} + ' '"></span>
+            <span th:if="${vet.specialities.size() == 0}">none</span> </td>
         </tr>
         </tbody>
     </table>
